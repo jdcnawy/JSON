@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-size: 30px;
+  font-family: 'Barlow', sans-serif;
+}
+#content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2vmin;
+}
+.title{
+  grid-area: title;
+}
+.pic{
+  grid-area: pic;
+  max-width: 100%;
+}
+.desc{
+  text-align:left;
+  grid-area:desc;
+}
+.subContainer{
+  display: grid;
+  padding: 3vmin;
+  justify-items: center;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  grid-row-gap: 3vmin;
+  grid-column-gap: 3vmin;
+  grid-template-areas: ". . title title . ." "pic pic pic pic pic pic" "desc desc desc desc desc desc";}
